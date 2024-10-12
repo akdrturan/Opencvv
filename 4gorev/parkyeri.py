@@ -23,7 +23,7 @@ def mouse(events,x,y,flags,params):
             x1,y1=pos
             if x1<x<x1+26 and y1<y<y1+15:
                 liste.pop(i)
-    with open("isaretli","wb") as f:            ## Bu, programın çalışması sırasında verilerin kalıcı olarak depolanmasını veya başka bir programda kullanılmasını sağlar.
+    with open("isaretli","wb") as f:           ## Bu, programın çalışması sırasında verilerin kalıcı olarak depolanmasını veya başka bir programda kullanılmasını sağlar.
         pickle.dump(liste,f)
 """events maus hareketlerının paramatlerelerını belırler. x-y kordınatları ıcın kullanılacak parametrelerdır.
 ilk olarak sol butona basıldıgında ilgili konumu liste degıskenının ıcıne at.sag butona basılması halınde y1-x1 konumlarını 
